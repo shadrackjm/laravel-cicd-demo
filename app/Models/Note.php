@@ -20,7 +20,7 @@ class Note extends Model
     protected function title(): Attribute
     {
         return Attribute::make(
-            set: fn (string $value): string => trim($value),
+            set: fn (string $value): string => $value,
         );
     }
 }
